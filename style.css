@@ -1,0 +1,191 @@
+body{
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.form{
+	position : relative;
+	margin : 0 auto; /* Deixa no Centro */
+	border: 3px solid rgba(0,100,200, 1);
+	border-radius: 10px;
+	width: 400px;
+	height: 500px;
+	text-align: center;
+}
+
+.avatar{
+	position : relative;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 2px solid rgba(0,100,200,1);
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+}
+
+
+.tie{
+	position: relative;
+	background-color: red;
+	border: 1px solid black;
+}
+
+.tieCenter{
+	position: relative;
+	width: 20px;
+	height: 10px;
+	top: -20px;
+	border-radius: 5px;
+	margin: 0 auto;
+	top: 58px;
+}
+
+.tieLeft{
+	position: absolute;
+	width: 20px;
+	height: 60px;
+	border-radius: 100%;
+	left: 70px;
+	top: 25px;
+	transform: rotateZ(-10deg);
+}
+
+.tieRight{
+	position: absolute;
+	width: 20px;
+	height: 60px;
+	border-radius: 100%;
+	left: 105px;
+	top: 25px;
+	transform: rotateZ(10deg);
+}
+
+.head{
+	position: relative;
+	margin: 0 auto;
+	width: 105px;
+	height: 90px;
+	border: 2px solid black;
+	border-radius: 100%;
+	top: 25%;
+	background-color: rgba(255, 230, 220);
+	overflow: hidden;
+}
+
+.hair{
+	position : relative;
+	width: 100%;
+	height: 30%;
+	background-color: orange;
+	margin-bottom: -7px;
+	border: 1px solid black;
+	z-index: 1;
+}
+
+.cutHair{
+	position: relative;
+	margin: 0 auto;
+	margin: 0 5px;
+	display: inline-block;
+	bottom: -12px;
+	width: 0px;
+	height: 0px;
+	border: 8px solid;
+	border-color: transparent transparent rgba(255, 230, 220) transparent;
+	border-image-repeat: no-repeat;
+	z-index: -1;
+}
+
+.cutHair::after{
+	content : ' ';
+	display: block;
+	position: relative;
+	width: 10px;
+	top: 2px;
+	left: -2px;
+	border: 0.5px solid black;
+	transform: rotateZ(45deg);
+}
+
+.cutHair::before{
+	content : ' ';
+	display: block;
+	position: relative;
+	width: 10px;
+	top: 3px;
+	left: -9.5px;
+	border: 0.5px solid black;
+	transform: rotateZ(-45deg);
+}
+
+.cutCenter{
+	transform: scale(1.3);
+	bottom: -10px;
+}
+
+.eye{
+	border: 1px solid black;
+	border-radius:  100px;
+	background-color: white;
+	width : 48%;
+	height : 50px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.eyeLeft{
+	position: relative;
+	float : left;
+	left: -6px;
+}
+
+.eyeRight{
+	position: relative;
+	float : left;
+	right: -6px;
+}
+
+.iris{
+	position: relative;
+	width: 90%;
+	height: 90%;
+	background-color: rgba(255, 150,150,1);
+	border-radius: 100%;
+	left: 4px;
+}
+
+.iris::before{
+	content: '';
+	width: 73%;
+	height: 73%;
+	display: block;
+	position: relative;
+	border-radius: 100%;
+	margin: 0 auto;
+	top: 5px;
+	background-color: black;
+	margin-bottom: -21px;
+}
+
+.iris::after{
+	content: '';
+	width: 30%;
+	height: 30%;
+	display: block;
+	position: relative;
+	border-radius: 100%;
+	margin: 0 auto;
+	top: 5px;
+	background-color: white;
+}
+
+.mouth{
+	position: relative;
+	margin: 0 auto;
+	width: 10px;
+	height: 20px;
+	border: 2px solid black;
+	border-color: transparent transparent black transparent;
+	border-radius: 100%;
+	top: 30px;
+}
